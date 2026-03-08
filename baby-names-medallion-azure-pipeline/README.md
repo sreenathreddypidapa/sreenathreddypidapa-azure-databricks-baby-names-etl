@@ -5,13 +5,10 @@ An end-to-end data pipeline implementing the medallion architecture (Bronze-Silv
 
 ##  Architecture
 
-BRONZE LAYER │ Raw data ingestion with metadata
-SILVER LAYER │ Cleaned data with engineered features
-GOLD LAYER │ Business-ready aggregations
-DASHBOARD │ Interactive visualizations
-
-
-text
+* BRONZE LAYER │ Raw data ingestion with metadata
+* SILVER LAYER │ Cleaned data with engineered features
+* GOLD LAYER │ Business-ready aggregations
+* DASHBOARD │ Interactive visualizations
 
 ## Technologies Used
 | Technology | Purpose |
