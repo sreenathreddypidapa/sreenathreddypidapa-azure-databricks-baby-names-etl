@@ -73,6 +73,7 @@ python
 storage_account = "babynamesadls123"
 storage_key = "your-storage-key-here"
 spark.conf.set(f"fs.azure.account.key.{storage_account}.blob.core.windows.net", storage_key)
+
 Step 5: Run the Pipeline
 Execute notebooks sequentially. The cluster will auto-terminate after 120 minutes of inactivity.
 
@@ -83,6 +84,7 @@ Top Male Name	JOHN (420 in 1910)
 Gender Distribution	~63% Female, ~37% Male
 Name Diversity	Increasing over time
 Regional Leader	BROOKLYN
+
 🎯 Bronze Layer
 Raw data ingestion from Azure Data Lake Storage Gen2
 
