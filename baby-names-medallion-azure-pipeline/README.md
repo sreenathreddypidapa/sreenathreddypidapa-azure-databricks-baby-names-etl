@@ -110,10 +110,8 @@ Name Popularity: Bar chart of all-time top 10 names
 ## 📁 Repository Structure
 text
 ├── notebooks/
-│   ├── 01_Bronze_Ingestion.py      # Raw data ingestion
-
+│   ├── 01_Bronze_Ingestion.py      # Raw data ingestion  
 │   ├── 02_Silver_Transformation.py # Data cleaning & features
-
 │   └── 03_Gold_Aggregations.py     # Business aggregations
 
 ├── dashboard/
