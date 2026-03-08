@@ -82,11 +82,13 @@ Name Diversity	Increasing over time
 Regional Leader	BROOKLYN
 
 🎯 Bronze Layer
+
 Raw data ingestion from Azure Data Lake Storage Gen2
 Added metadata: ingestion_timestamp, source_file
 Delta Lake format with ACID transactions
 
 🎯Silver Layer
+
 Data cleaning and standardization
 Feature engineering:
 name_length, name_category
@@ -96,6 +98,7 @@ region mapping
 Data quality validation (null checks, value ranges)
 
 🎯Gold Layer Tables
+
 Table	Purpose	Records
 gold_top_names	Ranked names by decade	5
 gold_yearly_trends	Year-over-year metrics	4
@@ -104,14 +107,11 @@ gold_regional	Geographic distribution	2
 gold_name_popularity	All-time rankings	6
 
 🎯 Dashboard Visualizations
+
 Top Names by Decade: Bar chart showing top 5 names per decade
-
 Yearly Trends: Line chart tracking total babies and unique names over time
-
 Gender Distribution: Pie chart showing male vs female distribution
-
 Regional Analysis: Bar chart of name counts by region
-
 Name Popularity: Bar chart of all-time top 10 names
 
 📁 Repository Structure
@@ -128,7 +128,9 @@ text
 │   ├── gold_layer.png
 │   └── dashboard.png
 └── README.md
+
 🧪 Sample SQL Queries
+
 sql
 -- Top names by decade
 SELECT decade, First_Name, total_count
@@ -157,16 +159,16 @@ SELECT First_Name, total_all_time
 FROM gold_name_popularity
 ORDER BY popularity_rank
 LIMIT 10;
- Cost Optimization
+
+🎯 Cost Optimization
+
 Cluster auto-termination: 120 minutes of inactivity
-
 Single node cluster: Used for development
-
 Resource cleanup: Stop/delete resources when not in use
-
-Estimated cost: ~$3-5 from $200 credits
+Estimated cost: ~$3-5
 
 🎯 Learning Outcomes
+
 * Azure resource provisioning
 * Data Lake Storage Gen2 configuration
 * Databricks workspace and cluster setup
@@ -179,22 +181,20 @@ Estimated cost: ~$3-5 from $200 credits
 * Dashboard creation
 
 📝 Future Enhancements
+
 Ingest full dataset (more years)
-
 Add automated scheduling
-
 Implement CI/CD with Databricks Asset Bundles
-
 Add unit tests for data quality
-
 Connect to Power BI for advanced visualizations
 
 📧 Contact
-[Sreenath Reddy Pidapa] - [sreenathreddypidapa@gmail.com]
 
-Project Link: [https://github.com/sreenathreddypidapa/azure-databricks-baby-names-etl]
+[Sreenath Reddy Pidapa] - [sreenathreddypidapa@gmail.com]
+Project Link: [https://github.com/sreenathreddypidapa/sreenathreddypidapa-azure-databricks-baby-names-etl]
 
 🙏 Acknowledgments
+
 Azure Databricks documentation
 NYC Open Data
 Microsoft Learn modules
