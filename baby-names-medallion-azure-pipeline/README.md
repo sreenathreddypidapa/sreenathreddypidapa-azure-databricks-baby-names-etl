@@ -107,8 +107,7 @@ Gender Distribution: Pie chart showing male vs female distribution
 Regional Analysis: Bar chart of name counts by region
 Name Popularity: Bar chart of all-time top 10 names
 
-## 📁 Repository Structure
-text
+## 📁 Repository Structure  
 ├── notebooks/  
 │   ├── 01_Bronze_Ingestion.py      # Raw data ingestion  
 │   ├── 02_Silver_Transformation.py # Data cleaning & features  
@@ -124,20 +123,19 @@ text
 
 ## 🧪 Sample SQL Queries
 
-sql
-
--- Top names by decade SELECT decade, First_Name, total_count FROM gold_top_names WHERE rank <= 5 ORDER BY decade, rank;
--- Yearly trends SELECT Year, total_babies, unique_names FROM gold_yearly_trends ORDER BY Year;
--- Gender distribution SELECT Sex, SUM(total) as total_babies FROM gold_gender_trends GROUP BY Sex;
--- Regional analysis SELECT region, SUM(total_babies) as total_babies FROM gold_regional GROUP BY region ORDER BY total_babies DESC;
--- Top 10 names all-time SELECT First_Name, total_all_time FROM gold_name_popularity ORDER BY popularity_rank LIMIT 10;
+sql  
+-- Top names by decade SELECT decade, First_Name, total_count FROM gold_top_names WHERE rank <= 5 ORDER BY decade, rank;  
+-- Yearly trends SELECT Year, total_babies, unique_names FROM gold_yearly_trends ORDER BY Year;  
+-- Gender distribution SELECT Sex, SUM(total) as total_babies FROM gold_gender_trends GROUP BY Sex;  
+-- Regional analysis SELECT region, SUM(total_babies) as total_babies FROM gold_regional GROUP BY region ORDER BY total_babies DESC;  
+-- Top 10 names all-time SELECT First_Name, total_all_time FROM gold_name_popularity ORDER BY popularity_rank LIMIT 10;  
 
 🎯 Cost Optimization
 
-Cluster auto-termination: 120 minutes of inactivity
-Single node cluster: Used for development
-Resource cleanup: Stop/delete resources when not in use
-Estimated cost: ~$3-5
+Cluster auto-termination: 120 minutes of inactivity  
+Single node cluster: Used for development  
+Resource cleanup: Stop/delete resources when not in use  
+Estimated cost: ~$3-5  
 
 🎯 Learning Outcomes
 
@@ -154,7 +152,7 @@ Estimated cost: ~$3-5
 
 ## 📝 Future Enhancements
 
-* Ingest full dataset (more years)
+* Ingest full dataset (more years) 
 * Add automated scheduling
 * Implement CI/CD with Databricks Asset Bundles
 * Add unit tests for data quality
@@ -162,12 +160,11 @@ Estimated cost: ~$3-5
 
 #3 📧 Contact
 
-[Sreenath Reddy Pidapa] - [sreenathreddypidapa@gmail.com]
-
-Project Link: [https://github.com/sreenathreddypidapa/sreenathreddypidapa-azure-databricks-baby-names-etl]
+[Sreenath Reddy Pidapa] - [sreenathreddypidapa@gmail.com]  
+Project Link: [https://github.com/sreenathreddypidapa/sreenathreddypidapa-azure-databricks-baby-names-etl]  
 
 ## 🙏 Acknowledgments
 
-Azure Databricks documentation
-NYC Open Data
-Microsoft Learn modules
+Azure Databricks documentation  
+NYC Open Data  
+Microsoft Learn modules  
