@@ -57,14 +57,16 @@ Import the notebooks in this order:
 
 In each notebook, add your storage key:
 python
-storage_account = "babynamesadls123"
-storage_key = "your-storage-key-here"
-spark.conf.set(f"fs.azure.account.key.{storage_account}.blob.core.windows.net", storage_key)
+* storage_account = "babynamesadls123"
+* storage_key = "your-storage-key-here"
+* spark.conf.set(f"fs.azure.account.key.{storage_account}.blob.core.windows.net", storage_key)
 
 ### Step 5: Run the Pipeline
 
 Execute notebooks sequentially. The cluster will auto-terminate after 120 minutes of inactivity.
+
 Key Insights
+
 Insight	Finding
 Top Female Name	MARY (1,035 in 1910)
 Top Male Name	JOHN (420 in 1910)
@@ -150,20 +152,21 @@ Estimated cost: ~$3-5
 * Gold layer aggregations
 * Dashboard creation
 
-📝 Future Enhancements
+## 📝 Future Enhancements
 
-Ingest full dataset (more years)
-Add automated scheduling
-Implement CI/CD with Databricks Asset Bundles
-Add unit tests for data quality
-Connect to Power BI for advanced visualizations
+* Ingest full dataset (more years)
+* Add automated scheduling
+* Implement CI/CD with Databricks Asset Bundles
+* Add unit tests for data quality
+* Connect to Power BI for advanced visualizations
 
-📧 Contact
+#3 📧 Contact
 
 [Sreenath Reddy Pidapa] - [sreenathreddypidapa@gmail.com]
+
 Project Link: [https://github.com/sreenathreddypidapa/sreenathreddypidapa-azure-databricks-baby-names-etl]
 
-🙏 Acknowledgments
+## 🙏 Acknowledgments
 
 Azure Databricks documentation
 NYC Open Data
