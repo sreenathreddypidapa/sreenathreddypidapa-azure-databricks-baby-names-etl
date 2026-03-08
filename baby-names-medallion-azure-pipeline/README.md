@@ -105,7 +105,7 @@ Gender Distribution: Pie chart showing male vs female distribution
 Regional Analysis: Bar chart of name counts by region
 Name Popularity: Bar chart of all-time top 10 names
 
-📁 Repository Structure
+## 📁 Repository Structure
 text
 ├── notebooks/
 │   ├── 01_Bronze_Ingestion.py      # Raw data ingestion
@@ -120,36 +120,15 @@ text
 │   └── dashboard.png
 └── README.md
 
-🧪 Sample SQL Queries
+## 🧪 Sample SQL Queries
 
 sql
--- Top names by decade
-SELECT decade, First_Name, total_count
-FROM gold_top_names
-WHERE rank <= 5
-ORDER BY decade, rank;
 
--- Yearly trends
-SELECT Year, total_babies, unique_names
-FROM gold_yearly_trends
-ORDER BY Year;
-
--- Gender distribution
-SELECT Sex, SUM(total) as total_babies
-FROM gold_gender_trends
-GROUP BY Sex;
-
--- Regional analysis
-SELECT region, SUM(total_babies) as total_babies
-FROM gold_regional
-GROUP BY region
-ORDER BY total_babies DESC;
-
--- Top 10 names all-time
-SELECT First_Name, total_all_time
-FROM gold_name_popularity
-ORDER BY popularity_rank
-LIMIT 10;
+-- Top names by decade SELECT decade, First_Name, total_count FROM gold_top_names WHERE rank <= 5 ORDER BY decade, rank;
+-- Yearly trends SELECT Year, total_babies, unique_names FROM gold_yearly_trends ORDER BY Year;
+-- Gender distribution SELECT Sex, SUM(total) as total_babies FROM gold_gender_trends GROUP BY Sex;
+-- Regional analysis SELECT region, SUM(total_babies) as total_babies FROM gold_regional GROUP BY region ORDER BY total_babies DESC;
+-- Top 10 names all-time SELECT First_Name, total_all_time FROM gold_name_popularity ORDER BY popularity_rank LIMIT 10;
 
 🎯 Cost Optimization
 
