@@ -46,7 +46,7 @@ An end-to-end data pipeline implementing the medallion architecture (Bronze-Silv
 
 ### Step 1: Clone the Repository
 
-git clone https://github.com/sreenathreddypidapa/sreenathreddypidapa-azure-databricks-baby-names-etl.git  
+git clone https://github.com/sreenathreddypidapa/azure-databricks-baby-names-etl.git  
 cd azure-databricks-baby-names-etl  
 
 ### Step 2: Configure Azure Resources
@@ -169,7 +169,7 @@ Estimated cost: ~$3-5
 #3 📧 Contact
 
 [Sreenath Reddy Pidapa] - [sreenathreddypidapa@gmail.com]  
-Project Link: [https://github.com/sreenathreddypidapa/sreenathreddypidapa-azure-databricks-baby-names-etl]  
+Project Link: [https://github.com/sreenathreddypidapa/azure-databricks-baby-names-etl]  
 
 ## 🙏 Acknowledgments
 
